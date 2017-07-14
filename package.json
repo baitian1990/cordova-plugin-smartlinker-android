@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-smartlinker-android",
+  "version": "1.2.1",
+  "description": "smartlinker",
+  "main": "index.js",
+  "cordova": {
+     "id": "org-apache-cordova-smartlinker",
+     "platforms": [
+       "android"
+     ]
+  },
+  "scripts": {
+    "test": "----test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baitian1990/cordova-plugin-smartlinker-android.git"
+  },
+  "keywords": [
+    "smartlinker"
+  ],
+  "author": "admin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baitian1990/cordova-plugin-smartlinker-android/issues"
+  },
+  "homepage": "https://github.com/baitian1990/cordova-plugin-smartlinker-android#readme"
+}

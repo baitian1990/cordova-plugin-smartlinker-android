@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="org-apache-cordova-smartlinker"
+	version="1.2.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>cordova-plugin-smartlinker-android</name>
+	<js-module name="SmartLinker" src="www/smartlinker.js">
+		<clobbers target="cordova.plugins.SmartLinker" />
+	</js-module>
+	<platform name="android"> 
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="SmartLinker">
+				<param name="android-package" value="org.apache.cordova.SmartLinker" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+            <uses-permission android:name="android.permission.BLUETOOTH"/>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+		</config-file>
+       
+		<source-file src="src/SmartLinker.java" target-dir="src/org/apache/cordova" />
+        <source-file src="libs/hiflying-iots-android-smartlink7.0.2.jar" target-dir="libs" />
+        
+    </platform>
+</plugin>
