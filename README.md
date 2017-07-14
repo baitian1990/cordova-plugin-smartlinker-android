@@ -15,17 +15,19 @@ A cordova plugin for platform of android,it is about smartlinker
  cordova plugin add cordova-plugin-smartlinker-android
 ```
  插件会自动从网上下载安装
-3.如果你想删除已经安装的插件，直接使用命令：
+ 
+3.如果你想删除已经安装的插件，使用命令：
 ```
  cordova plugin remove org-apache-cordova-smartlinker
 ```
- 就可以直接移除插件
+ 就可以移除插件
 #### 该插件提供了两个函数供h5调用
 1.获取所连接的wifi的账号。
 ```
   cordova.plugins.SmartLinker.getSSID();
 ```
   成功后会返回wifi账号
+  
 2.启动smartlinker将范围内符合条件的硬件设备连接到wifi
 ```
   cordova.plugins.SmartLinker.startSmartLinker(wifi密码);
