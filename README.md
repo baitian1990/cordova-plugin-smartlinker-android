@@ -4,7 +4,7 @@ A cordova plugin for platform of android,it is about smartlinker
 ### 一个小玩意儿，导入了hyflying的smartlinker的jar包，自己添加了点代码，做成了h5可以用的cordova插件。
  
 ### 使用方式：
-- 安装插件就不用多说了，两种方式：
+#### 安装插件就不用多说了，两种方式：
 
 1.下载zip包，解压,用命令行cd进入你的cordova项目的根目录，然后使用命令：
 ```
@@ -20,13 +20,13 @@ A cordova plugin for platform of android,it is about smartlinker
  cordova plugin remove org-apache-cordova-smartlinker
 ```
  就可以直接移除插件
-- 该插件提供了两个函数供h5调用
+#### 该插件提供了两个函数供h5调用
 1.获取所连接的wifi的账号。
 ```
   cordova.plugins.SmartLinker.getSSID();
 ```
   成功后会返回wifi账号
-  2.启动smartlinker将范围内符合条件的硬件设备连接到wifi
+2.启动smartlinker将范围内符合条件的硬件设备连接到wifi
 ```
   cordova.plugins.SmartLinker.startSmartLinker(wifi密码);
 ```
